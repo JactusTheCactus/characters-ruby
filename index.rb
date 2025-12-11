@@ -79,7 +79,7 @@ class Character
         El.new(:dt,
           "Species"),
         El.new(:dd,
-          El.new(:ul,
+          El.new(:ol,
             *@species.map { |s|
               El.new(:li,
                 s.to_s)
