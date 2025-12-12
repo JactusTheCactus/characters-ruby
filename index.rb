@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 def uni(u = 0x0)
-  "&##{u};"
+  "&#%s;" % [u]
 end
 ACUTE = uni 0x0301
 GRAVE = uni 0x0300
