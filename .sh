@@ -8,5 +8,6 @@ flag() {
 export style="$(sass style.scss --style=compressed)"
 ./index.rb > ruby.html
 cat index.html | perl -pe '
-	s|^[\S\s]*<body>(.*?)</body>[\S\s]*$|$1|g;
+	s|^[\S\s]*<body>||g;
+	s|</body>[\S\s]*$||g;
 ' > README.md
