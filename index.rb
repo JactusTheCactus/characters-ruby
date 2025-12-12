@@ -44,10 +44,7 @@ class El
     else
       ""
     end
-    "%s<%s>%s</%s>" % [pre,
-      @tag,
-      content,
-      @tag]
+    "%s<%s>%s</%s>" % [pre, @tag, content, @tag]
   end
 end
 
